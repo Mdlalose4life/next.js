@@ -1,3 +1,4 @@
+import FormSubmitButton from "@/components/FormSubmitButton";
 import { prisma } from "@/lib/db/prisma"
 import { redirect } from "next/navigation";
 
@@ -8,11 +9,11 @@ export const metadata = {
   async function AddProduct(formdata: FormData) {
     "use server"
     
+    console.log("Server action Envoked");
     const name = formdata.get("name")?.toString();
     const description = formdata.get("description")?.toString();
     const imageUrl = formdata.get("imageUrl")?.toString();
     const price= Number(formdata.get("price") || 0);
-
 
     if (!name || !description || !imageUrl || !price){
         throw Error("Missing required field");
@@ -25,7 +26,7 @@ export const metadata = {
     redirect("/")
   }
   
-export default function AddProductsPage(){
+export default function AddProductsPage() {
     return(
         <div>
             <h1 className="text-lg mb-3 font-bold"> Add Products </h1>
@@ -56,7 +57,8 @@ export default function AddProductsPage(){
                     type="number"
                     className="mb-3 w-full input input-bordered"
                 />
-                <button type="submit" className="btn btn-primary btn-block"> Add Product </button>
+                <FormSubmitButton className="btn-block"> ADD PRODUCT </FormSubmitButton>
+                {/* <button type="submit">ADD PRODUCT</button> */}
             </form>
         </div>
     )
