@@ -20,11 +20,11 @@ app.get("/posts", async (req, res)=> {
     res.json({posts: storedPosts});
 });
 
-app.get('/posts/:id', async (req, res)=> {
+app.get('/posts/:id', async (req, res) => {
     const storedPosts = await getStoredPosts();
-    const post = storedPosts.find(post => post.id == req.params.id)
-    req.json({ post })
-})
+    const post = storedPosts.find((post) => post.id === req.params.id);
+    res.json({ post });
+  });
 
 app.post('/posts', async (req, res) => {
     const existingPosts = await getStoredPosts();
