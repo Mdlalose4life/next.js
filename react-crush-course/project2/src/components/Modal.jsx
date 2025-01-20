@@ -1,10 +1,13 @@
-function Modal() {
+function Modal({onClose}) {
     return(
-        <div>
-            <p> Are you sure? </p>
-            <button>Cancel</button>
-            <button>Confirm</button>
-        </div>
+        <>
+            <div className="backdrop" onClick={onClose}/>
+            <div className="modal">
+                <p> Are you sure? </p>
+                <button onClick={onClose} className="btn btn--alt">Cancel</button>
+                <button onClick={onClose} className="btn">Confirm</button>
+            </div>
+        </>
     )
 }
 export default Modal;

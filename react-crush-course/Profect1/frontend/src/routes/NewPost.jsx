@@ -3,39 +3,6 @@ import classes from "./NewPost.module.css"
 import Modal from "../components/Modal"
 import { Link, Form, redirect } from "react-router-dom";
 
-
-// function NewPost(){
-// console.log("Here we work")
-    // function NewPost({onAddPost}
-    // const [enteredBody, setEnteredBody ]= useState('');
-    // const [enterAuthor, setEnterAuthor] = useState('');
-  
-    // function bodyChangeHandler(event) {
-    //   setEnteredBody(event.target.value)
-    // }
-  
-    // function authorChangeHandler(event) {
-    //   setEnterAuthor(event.target.value)
-    // }
-
-    // function submitHandler(event){
-    //     event.preventDefault();
-    //     const formData = {
-    //         body: enteredBody,
-    //         author: enterAuthor
-    //     };
-    
-    //       fetch("http://localhost:8080/posts",{
-    //         method: "POST",
-    //         body: JSON.stringify(postData),
-    //         headers: {
-    //           'content-type': 'application/json'
-    //         }
-    //       });
-    
-    //     onAddPost(formData)
-    // }
-
     function NewPost() {
         return (
             <Modal>
