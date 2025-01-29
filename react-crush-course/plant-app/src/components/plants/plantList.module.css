@@ -1,0 +1,16 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  
+  .list > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  

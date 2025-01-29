@@ -1,0 +1,78 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .item:hover {
+    transform: scale(1.02);
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .details {
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .category,
+  .care,
+  .water {
+    font-size: 0.9rem;
+    margin: 4px 0;
+    color: #333;
+  }
+  
+  .category strong,
+  .care strong,
+  .water strong {
+    color: #007BFF;
+  }
+  
+  .favoriteButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #157c0b;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 18px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+
+.favoriteButton:hover {
+  background-color: #51e373;
+  transform: scale(1.12);
+}
