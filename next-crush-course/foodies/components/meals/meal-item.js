@@ -8,7 +8,7 @@ export default function MealsItem({ tittle="See you later", slug, image, summary
         <article className={classes.meal} >
             <header>
                 <div className={classes.image}>
-                    {console.log(tittle)}
+                    {/* {console.log(tittle)} */}
                     <Image src={image} alt={tittle} fill/>
                 </div>
                 <div className={classes.headerText}>
