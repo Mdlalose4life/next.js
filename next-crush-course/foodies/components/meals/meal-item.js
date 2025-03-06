@@ -12,7 +12,7 @@ export default function MealsItem({ tittle="See you later", slug, image, summary
                     <Image src={image} alt={tittle} fill/>
                 </div>
                 <div className={classes.headerText}>
-                {console.log(tittle)}
+                {/* {console.log(tittle)} */}
                     <h2>{tittle}</h2>
                     <p>By {creator}</p>
                 </div>
