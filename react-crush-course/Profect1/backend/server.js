@@ -37,5 +37,5 @@ app.post('/posts', async (req, res) => {
     await storePosts(updatedPost);
     res.status(201).json({message: 'Stored new post.', post: newPost });
 });
-
+// Foodies
 app.listen(8080)
